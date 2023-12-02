@@ -1,0 +1,368 @@
+{% extends "web/partail/base.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.cymolthemes.com/html/shiftler/services-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 06:27:18 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name=”keywords” content=" Shiftler – Transportation & Logistics WordPress Theme, Movixo – Logistics & Transportation HTML5 Template, themes & template, html5 template, WordPress theme, unlimited colors available, ui/ux, ui/ux design, best html template, html template, html, JavaScript, best CSS theme,css3, elementor theme, latest premium themes 2023, latest premium templates 2023, Preyan Technosys Pvt.Ltd, cymol themes, themetech mount, Web 3.0, multi-theme, website theme and template, woocommerce, bootstrap template, web templates, responsive theme, services, web design and development, cargo service, clean coded, courier services, freight industry, localization, logistics, movers, online tracking, responsive designs, shipment, shipping, transportation, trucking, warehouse">
+    <meta name="description" content="Transportation &amp; Logistics Html Template" />
+    <meta name="author" content="https://www.cymolthemes.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Shiftler &#8211; Transportation &amp; Logistics Html Template</title>
+
+
+
+
+</head>
+
+<body>
+    <!--page start-->
+    <div class="page">
+        <header id="masthead" class="header cmt-header-style-01">
+            <!-- cmt-topbar-wrapper -->
+            <div class="cmt-topbar cmt-textcolor-white clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                <div class="cmt-topbar-content">
+                                    <ul class="top-contact text-left">
+                                        <li class="list-inline-item">The Reliable Moving Company. Your friend with a truck.</li>
+                                    </ul>
+                                </div>
+                                <div class="top_bar_contact_item ml-auto">
+                                     <div class="top_bar_icon"><i class="fa fa-phone"></i>
+                                     </div> Make a call:<a href="#"> +1(123)456-7890</a>
+                                </div>
+                                <div class="top_bar_contact_item">
+                                     <div class="top_bar_icon"><i class="fa fa-map-marker"></i></div>4789 Melmorn Ton Mashintron Town
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div><!-- cmt-topbar end -->
+            <!-- site-header-menu -->
+            <div id="site-header-menu" class="site-header-menu">
+                <div class="site-header-menu-inner cmt-stickable-header ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!--site-navigation -->
+                                <div class="site-navigation d-flex flex-row align-items-center">
+                                    <!-- site-branding -->
+                                    <div class="site-branding mr-auto">
+                                        <a class="home-link" href="{% url "web:index" %}" title="Shiftler" rel="home">
+
+                                             <img id="logo-img" class="img-center standardlogo" src="{% static "web/images/logo-img.png" %}" alt="logo-img">
+
+                                             <img id="logo-dark" class="img-center stickylogo" src="{% static "web/images/logo-dark.png" %}" alt="logo-img">
+                                        </a>
+                                      
+                                    </div><!-- site-branding end -->
+                                    <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                        <span class="menubar-box">
+                                            <span class="menubar-inner"></span>
+                                        </span>
+                                    </div>
+                                    <!-- menu -->
+                                    <nav class="main-menu menu-mobile" id="menu">
+                                        <ul class="menu">
+                                            <li class="mega-menu-item "><a href="{% url "web:index" %}" class="mega-menu-link">Home</a></li>
+                                            <li><a href="{% url "web:about-us" %}">About Us</a></li>
+                                            </li>
+                                            <li class="mega-menu-item {% if is_Service %}active{% endif %}"><a href="{% url "web:services-1" %}">Services</a></li>
+                                                
+                                            </li>
+                                            <li class="mega-menu-item"><a href="{% url "web:portfolio-style" %}" class="mega-menu-link">Projects</a>
+                                            </li>
+                                            <li class="mega-menu-item"><a href="{% url "web:blog-grid-view" %}" class="mega-menu-link">Update</a>
+                                                
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="{% url "web:contact" %}" class="mega-menu-link">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                                                        
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- site-header-menu end-->
+        </header> 
+        <!-- page-title -->
+        <div class="cmt-page-title-row">
+            <div class="cmt-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">Our Services</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Go to Shiftler." href="{% url "web:index" %}" class="home">
+                                    <i class="themifyicon ti-home"></i> &nbsp;Home</a>
+                                </span>
+                                <span class="cmt-bread-sep">&nbsp;--&nbsp;</span>
+                                <span>Services</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+        </div>
+        <!-- page-title end -->
+        <div class="main-site">
+        <!--about-section-->
+        <section class="cmt-row about-section clearfix">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="text-left mr_205 res-991-mr-0">
+                            <div class="cmt_single_image-wrapper style2">
+                                <img class="img-fluid" src="{% static "web/images/single-img-06.jpg" %}" alt="single-img-06">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12">
+                        <div class="spacing-9 cmt-bgcolor-white res-991-mt-0">
+                            <div class="row no-gutters text-left">
+                                    <!-- section title -->
+                                    <div class="section-title mb-0">
+                                        <div class="title-header">
+                                           <h2 class="title">We Have 25 Years Experiance</h2>
+                                        </div>
+                                        <div class="title-desc">
+                                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClin Tock, a Latin professor at Hampden-Sydney College the cites
+                                            <div class="border-bottom mb-35 mt-35 res-991-mt-30 res-991-mb-30"></div>
+                                        </div>  
+                                    </div><!-- section title end -->
+                            </div>
+                            <div class="row no-gutters text-left pr-50">
+                                    <div class="col-md-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box icon-align-before-content icon-ver_align-top style14">
+                                             <div class="featured-icon">
+                                                 <div class="cmt-num cmt-textcolor-skincolor"></div>
+                                             </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                   <h3>Bussiness Consulting</h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ummy text of the printing and typesetting industry.
+                                                </div>
+                                            </div>
+                                        </div><!-- featured-icon-box end -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box icon-align-before-content icon-ver_align-top style14">
+                                            <div class="featured-icon">
+                                                 <div class="cmt-num cmt-textcolor-skincolor"></div>
+                                             </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                    <h3>Road Freight & Warehousing</h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ummy text of the printing and typesetting industry.
+                                                </div>
+                                            </div>
+                                        </div><!-- featured-icon-box end -->
+                                    </div>
+                                    <div class="col-md-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box icon-align-before-content icon-ver_align-top style14">
+                                             <div class="featured-icon">
+                                                 <div class="cmt-num cmt-textcolor-skincolor"></div>
+                                             </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                   <h3>Custom Brokerage</h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ummy text of the printing and typesetting industry.
+                                                </div>
+                                            </div>
+                                        </div><!-- featured-icon-box end -->
+                                    </div>
+                            </div>
+                        </div>
+                    </div><!-- row end -->
+                </div>
+            </div>
+        </section><!--about-section end--> 
+        <!-- service-section -->
+        <section class="cmt-row cmt-bgcolor-grey clearfix">
+            <div class="container">
+                <!--row-->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 m-auto">
+                        <!--section title-->
+                        <div class="section-title text-center">
+                            <div class="title-header">
+                                <h3>Real Solution ,Real Fast !</h3>
+                                <h2 class="title">Shiftler Thats Save Your Time!</h2>
+                            </div>
+                        </div><!--section title end-->
+                    </div>
+                </div><!--row end-->
+                <div class="row slick_slider slick-arrows-style2" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows":true,"dots":false, "autoplay":true, "infinite":true,"responsive": [{"breakpoint":1100,"settings":{"slidesToShow": 3}} , {"breakpoint":992,"settings":{"slidesToShow": 2}},
+                    {"breakpoint":630,"settings":{"slidesToShow": 1}}]}'>
+                        <div class="col-12">
+                            <!-- featured-icon-box -->
+                            <div class="cmt-bgcolor-white featured-icon-box icon-align-bottom-content text-center style4 box-shadow">
+                                <div class="featured-icon">
+                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                        <i class="flaticon  flaticon-air-freight"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="{% url "web:air-freight-services" %}">Air Freight Services</a></h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        These are unique and often they differ from one industry to the other. Our logistics expertise.
+                                    </div>
+                                    <div class="mt-25"><!-- post-meta -->
+                                        <a class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark font-weight-500" href="{% url "web:air-freight-services" %}" tabindex="0">Read More<i class="ti ti-angle-right"></i></a>
+                                    </div><!-- post-meta end -->
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-iconbox -->
+                            <div class="cmt-bgcolor-white featured-icon-box icon-align-bottom-content text-center style4 box-shadow">
+                                <div class="featured-icon">
+                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                        <i class="flaticon-vessel"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="{% url "web:drone-delivery-services" %}">Drone Services</a></h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                       At our Auto Service garage, we are fully appreciate how difficult occur it is for people find.
+                                    </div>
+                                    <div class="mt-25">
+                                        <a class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark font-weight-500" href="{% url "web:drone-delivery-services" %}" tabindex="0">Read More<i class="ti ti-angle-right ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-iconbox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-iconbox -->
+                            <div class="cmt-bgcolor-white featured-icon-box icon-align-bottom-content text-center style4 box-shadow">
+                                <div class="featured-icon">
+                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                        <i class="flaticon flaticon-boxes"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="{% url "web:road-fright-services" %}">Road Fright Services</a></h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                       It must be aligned within a firm to have the most an efficient effect on overall to the manufacturing.
+                                    </div>
+                                    <div class="mt-25">
+                                        <a class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark font-weight-500" href="{% url "web:road-fright-services" %}" tabindex="0">Read More<i class="ti ti-angle-right ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-iconbox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-iconbox -->
+                            <div class="cmt-bgcolor-white featured-icon-box icon-align-bottom-content text-center style4 box-shadow">
+                                <div class="featured-icon">
+                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                        <i class="flaticon  flaticon-warehouse"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="{% url "web:warehousing-services" %}">Warehousing Services</a></h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        These are unique and often they differ from one industry to the other. Our logistics expertise.
+                                    </div>
+                                    <div class="mt-25">
+                                        <a class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark font-weight-500" href="{% url "web:warehousing-services" %}" tabindex="0">Read More<i class="ti ti-angle-right ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-iconbox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-iconbox -->
+                            <div class="cmt-bgcolor-white featured-icon-box icon-align-bottom-content text-center style4 box-shadow">
+                                <div class="featured-icon">
+                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                        <i class="flaticon-vessel"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="content-inner">
+                                        <div class="featured-title">
+                                            <h3><a href="{% url "web:consulting-storage" %}">Consulting Storage</a></h3>
+                                        </div>
+                                        <div class="featured-desc">
+                                          At our Auto Service garage, we are fully appreciate how difficult occur it is for people find.
+                                        </div>
+                                        <div class="mt-25">
+                                            <a class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark font-weight-500" href="{% url "web:consulting-storage" %}" tabindex="0">Read More<i class="ti ti-angle-right ml-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- featured-iconbox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-icon -->
+                            <div class="cmt-bgcolor-white featured-icon-box icon-align-bottom-content text-center style4 box-shadow">
+                                <div class="featured-icon">
+                                    <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                        <i class="flaticon-vessel"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="{% url "web:commercial-movers" %}">Commercial Movers</a></h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                       It must be aligned within a firm to have the most an efficient effect on overall to the manufacturing.
+                                    </div>
+                                    <div class="mt-25">
+                                        <a class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark font-weight-500" href="{% url "web:commercial-movers" %}" tabindex="0">Read More<i class="ti ti-angle-right ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-iconimagebox end-->
+                        </div>     
+                    </div>
+            </div>
+        </section><!--End service-section --><!--End service-section -->
+        
+        <!--footer start-->
+    <!--footer End-->
+        <!--back-to-top start-->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!--back-to-top end-->
+    </div><!--Page End-->
+    
+</body>
+
+<!-- Mirrored from www.cymolthemes.com/html/shiftler/services-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Nov 2023 06:27:18 GMT -->
+</html>
+
+{% endblock %}

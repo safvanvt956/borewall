@@ -1,0 +1,703 @@
+{% extends "web/partail/base.html" %}
+{% load static %}
+{% block content %}
+
+
+    <!--page start-->
+    <div class="page">
+        <!-- preloader start -->
+        <div id="preloader" class="blobs-wrapper">
+            <div class="cmt-bgcolor-skincolor loader"></div>
+        </div>
+        <!-- preloader end -->
+        <!--header start-->
+        <header id="masthead" class="header cmt-header-style-01">
+            <!-- cmt-topbar-wrapper -->
+            <div class="cmt-topbar cmt-textcolor-white clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                <div class="cmt-topbar-content">
+                                    <ul class="top-contact text-left">
+                                        <li class="list-inline-item">The Reliable Moving Company. Your friend with a truck.</li>
+                                    </ul>
+                                </div>
+                                <div class="top_bar_contact_item ml-auto">
+                                     <div class="top_bar_icon"><i class="fa fa-phone"></i>
+                                     </div> Make a call:<a href="#"> +1(123)456-7890</a>
+                                </div>
+                                <div class="top_bar_contact_item">
+                                     <div class="top_bar_icon"><i class="fa fa-map-marker"></i></div>4789 Melmorn Ton Mashintron Town
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div><!-- cmt-topbar end -->
+            <!-- site-header-menu -->
+            <div id="site-header-menu" class="site-header-menu">
+                <div class="site-header-menu-inner cmt-stickable-header ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!--site-navigation -->
+                                <div class="site-navigation d-flex flex-row align-items-center">
+                                    <!-- site-branding -->
+                                    <div class="site-branding mr-auto">
+                                        <a class="home-link" href="{% url "web:index" %}" title="Shiftler" rel="home">
+        
+                                             <img id="logo-img" class="img-center standardlogo" src="{% static "web/images/logo-img.png" %}" alt="logo-img">
+        
+                                             <img id="logo-dark" class="img-center stickylogo" src="{% static "web/images/logo-dark.png" %}" alt="logo-img">
+                                        </a>
+                                      
+                                    </div><!-- site-branding end -->
+                                    <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                        <span class="menubar-box">
+                                            <span class="menubar-inner"></span>
+                                        </span>
+                                    </div>
+                                    <!-- menu -->
+                                    <nav class="main-menu menu-mobile" id="menu">
+                                        <ul class="menu">
+                                            <li class="mega-menu-item {% if is_Home %}active{% endif %}"><a href="{% url "web:index" %}" class="mega-menu-link">Home</a></li>
+                                            <li class="mega-menu-item "><a href="{% url "web:about-us" %}">About Us</a></li>
+                                            </li>
+                                            <li class="mega-menu-item"><a href="{% url "web:services-1" %}">Services</a></li>
+                                                
+                                            </li>
+                                            <li class="mega-menu-item"><a href="{% url "web:portfolio-style" %}" class="mega-menu-link">Projects</a>
+                                            </li>
+                                            <li class="mega-menu-item"><a href="{% url "web:blog-grid-view" %}" class="mega-menu-link">Update</a>
+                                                
+                                            </li>
+                                            <li class="mega-menu-item">
+                                                <a href="{% url "web:contact" %}" class="mega-menu-link">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                                                       
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- site-header-menu end-->
+        </header>
+        
+
+        <!--start main slider-->
+        <div class="banner_slider_wrapper">
+            <div class="banner_slider">
+                <div class="slide" style="background-image: url({% static "web/images/slides/slider-mainbg-001.jpg" %});">
+                    <div class="slide__content cmt-textcolor-white text-right slide_style1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="slide__content--headings">
+                                        <h2  data-animation="fadeInUp" data-delay="1"> Moving families to</h2>
+                                        <h2  data-animation="fadeInUp" data-delay="2">better lives since <span class="cmt-textcolor-skincolor">1945.</span></h2>
+                                        
+                                        <div>
+                                            <h3 data-animation="fadeInDown" data-delay="3">A  Truly Moving Experience</h3> 
+                                            <div class="" data-animation="fadeInRight" data-delay="4">
+                                                <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-skincolor" href="{% url "web:services-1" %}">Our Services</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+                <div class="slide" style="background-image: url({% static "web/images/slides/slider-mainbg-002.jpg" %});">
+                    <div class="slide__content cmt-textcolor-white text-left slide_style1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="slide__content--headings mt-35  res-991-mt_70 res-767-mt-0">
+                                        <div class="">
+                                            <h2  data-animation="fadeInDown " class="s2">Safe & Reliable</h2>
+                                            <h2  data-animation="fadeInDown " class="s2">Cargo Solutions!</h2>
+                                            <p data-animation="fadeInLeft" data-delay="0.5" class="w-50">Our leaders first identify the critical obstacles forward <br> progress and then develop coherent approach.</p>
+                                        </div>
+                                        <div data-animation="fadeInUp" data-delay="1.4" class="mt-25">
+                                            <div class="row no-gutters d-inline align-items-center">
+                                                <div class="col d-md-inline">
+                                                    <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-skincolor cmt-textcolor-white" href="{% url "web:services-1" %}">Oue Services!</a>
+                                                </div>
+                                                <div class="col d-md-inline res-767-mt-25">
+                                                    <a href="https://www.youtube.com/watch?v=jNI04dPPHVU" target="_self" class="cmt-icon cmt-icon -border cmt-icon_element-size-xxs cmt-icon_element-style-rounded cmt_prettyphoto  res-767-ml-0 ">
+                                                        <i class="fa fa-play pl-2"></i>
+                                                    </a>
+                                                    <a href="https://www.youtube.com/watch?v=jNI04dPPHVU" target="_self" class="cmt_prettyphoto cmt-textcolor-white">Watch Video! 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <!--zero-padding-section-->
+            <section class="cmt-row top-zero-padding-section cmt-bgcolor-skincolor  clearfix">
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="mt_70 res-991-mt-0">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                        <!-- featured-iconbox -->
+                                        <div class="featured-icon-box icon-align-top-content box-shadow style1">
+                                            <div class="featured-icon">
+                                                <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                                    <i class="flaticon-truck"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                    <h3><a href="{% url "web:road-fright-services" %}">Transparent Best Pricing</a></h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <p>International supply chains  the involves challenging regulations of international.
+                                                        </p>
+                                                </div>
+                                                <div class="mt_20">
+                                                    <a class="cmt-icon bottom_icon" href="{% url "web:road-fright-services" %}">
+                                                       <i class="ti ti-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>   
+                                        </div><!-- featured-iconbox end-->
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                        <!-- featured-iconbox -->
+                                        <div class="featured-icon-box icon-align-top-content box-shadow style1">
+                                            <div class="featured-icon">
+                                                <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                                    <i class="flaticon-vessel"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                    <h3><a href="{% url "web:drone-delivery-services" %}">The Real Time Tracking</a></h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <p>Ensure customers’ supply chains are fully compliant are by practices.</p>
+                                                </div>
+                                                <div class="mt_20">
+                                                    <a class="cmt-icon bottom_icon" href="{% url "web:drone-delivery-services" %}">
+                                                       <i class="ti ti-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div><!-- featured-iconbox end-->
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                        <!-- featured-iconbox -->
+                                        <div class="featured-icon-box icon-align-top-content box-shadow style1">
+                                            <div class="featured-icon">
+                                                <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                                    <i class="flaticon-conveyor"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                    <h3><a href="{% url "web:road-fright-services" %}">Security Sysytem Cargo</a></h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <p>High security requirements and are certified to local for reguation of standards.</p>
+                                                </div>
+                                                <div class="mt_20">
+                                                    <a class="cmt-icon bottom_icon" href="{% url "web:road-fright-services" %}">
+                                                       <i class="ti ti-arrow-right"></i>
+                                                    </a>
+                                                </div>    
+                                            </div>
+                                        </div><!-- featured-iconbox end-->
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                        <!-- featured-iconbox -->
+                                        <div class="featured-icon-box icon-align-top-content box-shadow style1">
+                                            <div class="featured-icon">
+                                                <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-lg">
+                                                    <i class="flaticon-delivery-truck"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title">
+                                                    <h3><a href="{% url "web:warehousing-services" %}">Warehousing Storage</a></h3>
+                                                </div>
+                                                <div class="featured-desc">
+                                                    <p>Depending on your product, we provide warehouse activities. for warehouse.</p>
+                                                </div>
+                                                <div class="mt_20">
+                                                    <a class="cmt-icon bottom_icon" href="{% url "web:warehousing-services" %}">
+                                                       <i class="ti ti-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div><!-- featured-iconbox end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col-lg-7 col-md-10 col-sm-12 m-auto">
+                            <div class="mt-35 res-991-mt-15 text-center botton_center_txt font-weight-500">
+                               Working every day to earn our customer’s trust <a href="{% url "web:contact" %}" class="cmt-btn btn-inline">
+                                <strong> Get Started!<i class="fa fa-arrow-circle-right  fs-18"></i></strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section><!--zero-padding-section end -->
+
+            <!-- service-section -->
+            <section class="cmt-row service-section clearfix">
+                <div class="container">
+                    <!--row-->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 m-auto">
+                            <!--section title-->
+                            <div class="section-title text-center">
+                                <div class="title-header">
+                                    <h3>Real Solution ,Real Fast !</h3>
+                                    <h2 class="title">Best Global Logistics Solutions.</h2>
+                                </div>
+                            </div><!--section title end-->
+                        </div>
+                    </div><!--row end-->
+                    <div class="row slick_slider services" data-slick='{"slidesToShow": 2, "slidesToScroll": 1, "arrows":false,"dots":true, "autoplay":false, "infinite":true,"responsive": [{"breakpoint":1100,"settings":{"slidesToShow": 2}} , {"breakpoint":992,"settings":{"slidesToShow": 2}},
+                    {"breakpoint":630,"settings":{"slidesToShow": 1}}]}'>
+
+                        <div class="col-12">
+                            <!-- featured-imagebox -->
+                            <div class="row no-gutters featured-imagebox featured-imagebox-service cmt-box-view-left-image style1 box-shadow">
+                                <div class="col-lg-6 col-md-12 col-sm-12 cmt-featured-img-left">
+                                    <div class="featured-thumbnail"> 
+                                        <img class="img-fluid" src="{% static "web/images/services/services-img05-520x520.jpg" %}" alt="service">
+                                        <div class="cmt-service-iconbox">
+                                            <span class="cmt-service-icon">
+                                                <i class="flaticon flaticon-air-freight"></i>
+                                            </span>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-12  col-sm-12 featured-content">
+                                    <div class="post-title featured-title">
+                                        <h3><a href="{% url "web:air-freight-services" %}">Air Freight Services</a></h3>
+                                    </div>
+                                    <div class="featured-desc cmt-box-desc">
+                                        At our Auto Service garage, we are fully appreciate how difficult occur it is for people to find.
+                                    </div>
+                                    <div class="servicebox-readmore">
+                                        <a href="{% url "web:air-freight-services" %}">Read More</a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-imagebox -->
+                            <div class="row no-gutters featured-imagebox featured-imagebox-service cmt-box-view-left-image style1 box-shadow">
+                                <div class="col-lg-6 col-md-12 col-sm-12 cmt-featured-img-left">
+                                    <div class="featured-thumbnail"> 
+                                        <img class="img-fluid" src="{% static "web/images/services/services-img06-520x520.jpg" %}" alt="service"> 
+                                    </div>
+                                    <div class="cmt-service-iconbox">
+                                        <span class="cmt-service-icon">
+                                            <i class="flaticon flaticon-vessel"></i>
+                                        </span>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 featured-content">
+                                    <div class="post-title featured-title">
+                                        <h3><a href="{% url "web:drone-delivery-services" %}">Drone Services</a></h3>
+                                    </div>
+                                    <div class="featured-desc cmt-box-desc">
+                                         These are unique and often they differ from one industry to the other. Our logistics expertise.
+                                    </div>
+                                    <div class="servicebox-readmore">
+                                        <a href="{% url "web:drone-delivery-services" %}">Read More</a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div>
+                        <div class="col-12">
+                            <!-- featured-imagebox -->
+                            <div class="row no-gutters featured-imagebox featured-imagebox-service cmt-box-view-left-image style1 box-shadow">
+                                <div class="col-lg-6 col-md-12 col-sm-12 cmt-featured-img-left box-shadow">
+                                    <div class="featured-thumbnail"> 
+                                        <img class="img-fluid" src="{% static "web/images/services/services-img01-520x520.jpg" %}" alt="service"> 
+                                    </div>
+                                    <div class="cmt-service-iconbox">
+                                        <span class="cmt-service-icon">
+                                            <i class="flaticon  flaticon-boxes"></i>
+                                        </span>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 featured-content">
+                                    <div class="post-title featured-title">
+                                        <h3><a href="{% url "web:road-fright-services" %}">Road Fright Services</a></h3>
+                                    </div>
+                                    <div class="featured-desc cmt-box-desc">
+                                        It must be aligned within a firm to have the most an efficient effect on overall to the manufacturing.
+                                    </div>
+                                    <div class="servicebox-readmore">
+                                        <a href="{% url "web:road-fright-services" %}">Read More</a>
+                                    </div> 
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-imagebox -->
+                            <div class="row no-gutters featured-imagebox featured-imagebox-service cmt-box-view-left-image style1 box-shadow">
+                                <div class="col-lg-6 col-md-12 col-sm-12 cmt-featured-img-left">
+                                    <div class="featured-thumbnail"> 
+                                        <img class="img-fluid" src="{% static "web/images/services/services-img04-520x520.jpg" %}" alt="service"> 
+                                    </div>
+                                    <div class="cmt-service-iconbox">
+                                        <span class="cmt-service-icon">
+                                            <i class="flaticon flaticon-warehouse"></i>
+                                        </span>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 featured-content">
+                                    <div class="post-title featured-title">
+                                        <h3><a href="{% url "web:warehousing-services" %}">Warehousing Services</a></h3>
+                                    </div>
+                                    <div class="featured-desc cmt-box-desc">
+                                         At our Auto Service garage, we are fully appreciate how difficult occur it is for people find.
+                                    </div>
+                                    <div class="servicebox-readmore">
+                                        <a href="{% url "web:warehousing-services" %}">Read More</a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-imagebox -->
+                            <div class="row no-gutters featured-imagebox featured-imagebox-service cmt-box-view-left-image style1 box-shadow">
+                                <div class="col-lg-6 col-md-12 col-sm-12 cmt-featured-img-left">
+                                    <div class="featured-thumbnail"> 
+                                        <img class="img-fluid" src="{% static "web/images/services/services-img02-520x520.jpg" %}" alt="service"> 
+                                    </div>
+                                    <div class="cmt-service-iconbox">
+                                        <span class="cmt-service-icon">
+                                            <i class="flaticon flaticon-container"></i>
+                                        </span>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 featured-content">
+                                    <div class="post-title featured-title">
+                                        <h3><a href="{% url "web:consulting-storage" %}">Consulting Storage</a></h3>
+                                    </div>
+                                    <div class="featured-desc cmt-box-desc">
+                                        We have a solid track record of fulfilling the shipping and logistical needs of clients.
+                                    </div>
+                                    <div class="servicebox-readmore">
+                                        <a href="{% url "web:consulting-storage" %}">Read More</a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div> 
+                        <div class="col-12">
+                            <!-- featured-imagebox -->
+                            <div class="row no-gutters featured-imagebox featured-imagebox-service cmt-box-view-left-image style1 box-shadow">
+                                <div class="col-lg-6 col-md-12 col-sm-12 cmt-featured-img-left box-shadow">
+                                    <div class="featured-thumbnail"> 
+                                        <img class="img-fluid" src="{% static "web/images/services/services-img03-520x520.jpg" %}" alt="service"> 
+                                    </div>
+                                    <div class="cmt-service-iconbox">
+                                        <span class="cmt-service-icon">
+                                            <i class="flaticon flaticon-delivery-truck"></i>
+                                        </span>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 featured-content ">
+                                    <div class="post-title featured-title">
+                                        <h3><a href="{% url "web:commercial-movers" %}">Commercial Movers</a></h3>
+                                    </div>
+                                    <div class="featured-desc cmt-box-desc">
+                                       Agents are experts in various local specific conditions and more regulations and rules.
+                                    </div>
+                                    <div class="servicebox-readmore">
+                                        <a href="{% url "web:commercial-movers" %}">Read More</a>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox end-->
+                        </div>  
+                    </div>
+                    <div class="row">
+                        <div class=" col-lg-12 col-md-12 col-sm-12 m-auto">
+                            <div class="mt-30 res-991-mt-15 text-left botton_center_txt font-weight-500">
+                              Logistic & Transport Solutions Saves Your Time. 
+                              <a href="{% url "web:services-1" %}" class="cmt-btn btn-inline"> 
+                                <strong>Finds Your Solutions</strong> <i class="fa fa-arrow-circle-right ml-1 fs-18"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!--End service-section -->
+
+            <!--broken-section-->
+            <section class="cmt-row broken-section bg-layer mt-70 res-991-mt-0 bg-layer-equal-height clearfix">
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
+                        <div class=" col-sm-12 col-md-12 col-lg-7 ">
+                            <!-- col-img-img-two -->
+                            <div class="col-bg-img-one cmt-col-bgimage-yes cmt-bg cmt-left-span break-991-colum">
+                                <div class="cmt-col-wrapper-bg-layer cmt-bg-layer"></div>
+                                <div class="layer-content"></div>
+                            </div><!-- col-img-bg-img-two end-->
+                            <img src="{% static "web/images/bg-img/col-bgimage-1.jpg" %}" class="cmt-equal-height-image" alt="bg-image">
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="cmt-bg cmt-col-bgcolor-yes cmt-right-span cmt-bgcolor-darkgrey spacing-1 z-index-2">
+                            <div class="cmt-col-wrapper-bg-layer cmt-bg-layer"></div>
+                                <div class="layer-content cmt-textcolor-white">
+                                        <!-- section title -->
+                                        <div class="section-title">
+                                            <div class="title-header">
+                                                <h3>Real Solutions, Real Fast!</h3>
+                                              <h2 class="title mb-30">Global Logistics Partner To World’s Famous For Over 25 Years!</h2>
+                                            </div>
+                                            <div class="title-desc">
+                                                <p>Our global logistics expertise, advanced supply chain technology & customized logistics solutions will help you analyze, develop and implement
+                                                </p>
+                                            </div>   
+                                        </div><!-- section title end -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <!-- featured-iconbox -->
+                                                <div class="featured-icon-box cmt-bgcolor-darkgrey icon-align-top-content text-left style2">
+                                                    <div class="featured-icon">
+                                                        <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-xl">
+                                                          <i class="flaticon-fast-delivery"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="featured-content">
+                                                        <div class="content-inner">
+                                                            <div class="featured-title">
+                                                                <h3>Cost Optimization</h3>
+                                                            </div>
+                                                            <div class="featured-desc">
+                                                                <p>Indignation and dislike men who are so beguiled all demoralized by the distinguish free charms.</p>
+                                                                <a class="cmt-icon cmt-icon_element-onlytxt bottom_icon cmt-btn-color-white" href="{% url "web:consulting-storage" %}">
+                                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- featured-iconbox end-->
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <!-- featured-iconbox -->
+                                                <div class="featured-icon-box cmt-bgcolor-darkgrey icon-align-top-content text-left  style2">
+                                                    <div class="featured-icon">
+                                                        <div class="cmt-icon cmt-icon_element-onlytxt cmt-icon_element-color-skincolor cmt-icon_element-size-xl">
+                                                            <i class="flaticon-delivery-truck"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="featured-content">
+                                                        <div class="content-inner">
+                                                            <div class="featured-title">
+                                                                <h3>Reduce Transit Time</h3>
+                                                            </div>
+                                                            <div class="featured-desc">
+                                                                <p>Indignation and dislike men who are so beguiled all demoralized by the distinguish free charms.</p>
+                                                                <a class="cmt-icon cmt-icon_element-onlytxt bottom_icon cmt-btn-color-white" href="{% url "web:road-fright-services" %}">
+                                                                    <i class="fa fa-arrow-circle-right"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- featured-iconbox end-->
+                                            </div>
+                                        </div>        
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="text-left cmt-textcolor-skincolor pt-35 pb-20 fs-18">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="cmt-textcolor-white fs_16"><strong class="border-bottom border-bottom-width-2">99.9% Customer Satisfaction based</strong> on 750+ reviews and 20,000 Objective Resource</p>
+                                                </div>
+                                            </div> 
+                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row end -->
+                </div>
+            </section><!--broken-section end-->
+
+            <!--bottom-zero-padding-section-->
+            <section class="cmt-row bottom-zero-padding-section clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-12 col-sm-12">
+                            <!-- section title -->
+                            <div class="section-title d-lg-flex">
+                                <div class="title-header">
+                                    <h3>Explore Recent Works</h3>
+                                    <h2 class="title">Managing Logistics For World’s Multinational Companies.</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="title-desc">
+                                <div class="pb-15">Our global logistics expertise, advanced supply chain tecnology logistics solutions will help you the analyze.</div>
+                                <div class="row d-flex">
+                                    <div class="title_btn pt-10 ml-15">
+                                        <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-icon-btn-right cmt-btn-style-fill cmt-btn-color-skincolor" href="{% url "web:contact" %}">Our Pricing <i class="fa fa-arrow-circle-right"></i>
+                                        </a>
+                                         <a class="ml-15 cmt-btn btn-inline" href="{% url "web:contact" %}">Request Demo<i class="fa fa-arrow-circle-right"></i></a>
+                                   </div>
+                                </div>
+                            </div>
+                        </div><!-- section title end -->
+                    </div>
+                </div>
+            </section> <!-- bottom-zero-padding-section end--> 
+
+            <!--top-zero-padding-section-->
+            <section class="cmt-row top-zero-padding-section clearfix">    
+                   <div class="container-fluid"> 
+                       <div class="row cmt-boxes-spacing-5px slick_slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "arrows":false, "autoplay":true, "infinite":true}'>
+                           <div class="cmt-box-col-wrapper col-12">
+                                <!-- featured-imagebox -->
+                                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                                    <div class="cmt-box-view-overlay">
+                                       <div class="featured-thumbnail">
+                                            <img class="img-fluid" src="{% static "web/images/portfolio/cmt-portfolio-1.jpg" %}" alt="image">
+                                        </div>
+                                        <div class="cmt-media-link">
+                                            <a  href="{% url "web:single-style-03" %}" tabindex="-1">
+                                                <i class="ti ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h3><a href="{% url "web:single-style-03" %}">Chemicals Factory &#038; Documents Data </a></h3>
+                                        </div>
+                                        <div class="featured-desc">
+                                            <a href="#">Analystics<span>,</span></a>
+                                            <a href="#">Optimiztion</a>
+
+                                        </div>
+                                    </div>
+                                </div><!-- featured-imagebox end -->
+                            </div>
+                            <div class="cmt-box-col-wrapper col-12">
+                                <!-- featured-imagebox -->
+                                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                                    <div class="cmt-box-view-overlay">
+                                        <div class="featured-thumbnail">
+                                            <img class="img-fluid" src="{% static "web/images/portfolio/cmt-portfolio-2.jpg" %}" alt="image">
+                                        </div>
+                                        <div class="cmt-media-link">
+                                            <a  href="{% url "web:single-style-03" %}" tabindex="-1">
+                                                <i class="ti ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h3><a href="{% url "web:single-style-03" %}">Business Swell Into Post Lockdown</a></h3>
+                                        </div>
+                                        <div class="featured-desc">
+                                            <a href="#">Analystics<span>,</span></a>
+                                            <a href="#">Warehouse</a>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-imagebox end -->
+                            </div>
+                            <div class="cmt-box-col-wrapper col-12">
+                                <!-- featured-imagebox -->
+                                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                                    <div class="cmt-box-view-overlay">
+                                        <div class="featured-thumbnail">
+                                            <a href="{% url "web:single-style-03" %}"><img class="img-fluid" src="{% static "web/images/portfolio/cmt-portfolio-3.jpg" %}" alt="image"></a>
+                                        </div>
+                                        <div class="cmt-media-link">
+                                            <a  href="{% url "web:single-style-03" %}" tabindex="-1">
+                                                <i class="ti ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h3><a href="{% url "web:single-style-03" %}">The Minimize Cost Of Manufacturing</a></h3>
+                                        </div>
+                                        <div class="featured-desc">
+                                            <a href="#">Analystics<span>,</span></a>
+                                            <a href="#">Logistics</a>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-imagebox end-->
+                            </div>
+                            <div class="cmt-box-col-wrapper col-12">
+                                <!-- featured-imagebox -->
+                                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                                
+                                    <div class="cmt-box-view-overlay">
+                                       
+                                        <div class="featured-thumbnail">
+                                            <a href="{% url "web:single-style-03" %}"> <img class="img-fluid" src="{% static "web/images/portfolio/cmt-portfolio-4.jpg" %}" alt="image"></a>
+                                        </div>
+                                        <div class="cmt-media-link">
+                                            <a  href="{% url "web:single-style-03" %}" tabindex="-1">
+                                                <i class="ti ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content">
+                                        <div class="featured-title">
+                                            <h3><a href="{% url "web:single-style-03" %}">For Warehouse On-Hand Inventory</a></h3>
+                                        </div>
+                                        <div class="featured-desc">
+                                            <a href="#">Analystics<span>,</span></a>
+                                            <a href="#">Optimiztion</a>
+                                        </div>
+                                    </div>
+                                </div><!-- featured-imagebox end -->
+                            </div>
+                            
+                        </div>
+                    </div>
+            </section><!--top-zero-padding-section end-->
+
+        </div><!--Main site Over-->
+
+        <!--footer start-->
+        <!--footer End-->
+        
+        <!--back-to-top start-->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!--back-to-top end-->
+    </div><!--Page End-->
+    
+
+</html>
+
+{% endblock  %}

@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <footer class="footer widget-footer clearfix">
+        <div class="first-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3 widget-area">
+                        <div class="widget widget_text  clearfix">
+                            <div class="footer-logo">
+                                <img id="footer-logo-img" class="img-center" src="{% static "web/images/logo-img.png" %}" alt="">
+                            </div>
+                            <ul class="widget_contact_wrapper">
+                                <li>
+                                    <i class="fa fa-map-marker cmt-textcolor-skincolor"></i>
+                                    184 Main Rd E, St Albans
+                                    VIC 3021, Australia
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope-o cmt-textcolor-skincolor"></i>
+                                    <a href="mailto:Contact@Company.com">Contact@Company.Com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone cmt-textcolor-skincolor"></i>(+02) 1800 5656 3010
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 widget-area">
+                        <div class="widget widget_nav_menu clearfix">
+                           <h3 class="widget-title">Quick Links</h3>
+                            <ul class="menu-footer-quick-links">
+                                <li><a href="{% url "web:index" %}">Home</a></li>  
+                                <li><a href="{% url "web:about-us" %}">About</a></li>
+                                <li><a href="{% url "web:services-1" %}">Service</a></li>
+                                <li><a href="{% url "web:portfolio-style" %}">Projects</a></li>
+                                <li><a href="{% url "web:blog-grid-view" %}">Update</a></li>
+                                <li><a href="{% url "web:contact" %}">Contact</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 widget-area">
+                        <div class="widget widget_nav_menu clearfix">
+                           <h3 class="widget-title">Help</h3>
+                            <ul class="menu-footer-quick-service-links">
+                                <li><a href="#"> Privacy</a></li>  
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                   <div class="col-sm-6 col-md-6 col-lg-3 widget-area">
+                        <div class="widget widget-text clearfix">
+                           <h3 class="widget-title">Newsletter Signup</h3>
+                            <p>Subscribe To Our Newsletter And Get Daily 10% Off Your First Purchase.</p>
+                            <form  id="subscribe-form" class="newsletter-form" method="post" action="#" data-mailchimp="true">
+                                <div class="mailchimp-inputbox" id="subscribe-content"> 
+                                    <p>
+                                        <input type="email" name="email" placeholder="Email Add.." required="">
+                                    </p>
+                                    <p><button type="submit" class="cmt-btn cmt-btn-size-md cmt-btn-shape-round cmt-btn-style-fill cmt-btn-color-skincolor">Send</button></p>
+                                </div>
+                                <div id="subscribe-msg"></div>
+                            </form>
+                            <div class="widget d-flex pt-2">
+                               <h3 class="widget-title">Follow Us</h3>
+                             <div class="social-icons">
+                                <ul class="list-inline d-flex">
+                                    <li>
+                                        <a class="tooltip-top" target="_blank" href="#" data-tooltip="Facebook"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="tooltip-top" target="_blank" href="#" data-tooltip="Twitter"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class=" tooltip-top" target="_blank" href="#" data-tooltip="RSS"><i class="fa fa-rss"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="tooltip-top" target="_blank" href="#" data-tooltip="Vimeo"><i class="fa fa-vimeo"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                   </div>  
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer-text">
+            <div class="container-fluid text-center">
+                <div class="row copyright">
+                    <div class="col-lg-12  ">
+                        <span>Copyright © 2023 <a class="text-success" href="{% url "web:index" %}">Shiftler</a>, All Rights Reserved. Powered By <a href="https://gedexo.com/">Gedexo</a></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

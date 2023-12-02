@@ -1,0 +1,314 @@
+<!-- <script>document.cookie = "humans_21909=1"; document.location.reload(true)</script> -->
+<!-- <script>document.cookie = "humans_21909=1"; document.location.reload(true)</script> -->
+
+{% extends "web/partail/base.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name=”keywords” content=" Shiftler – Transportation & Logistics WordPress Theme, Movixo – Logistics & Transportation HTML5 Template, themes & template, html5 template, WordPress theme, unlimited colors available, ui/ux, ui/ux design, best html template, html template, html, JavaScript, best CSS theme,css3, elementor theme, latest premium themes 2023, latest premium templates 2023, Preyan Technosys Pvt.Ltd, cymol themes, themetech mount, Web 3.0, multi-theme, website theme and template, woocommerce, bootstrap template, web templates, responsive theme, services, web design and development, cargo service, clean coded, courier services, freight industry, localization, logistics, movers, online tracking, responsive designs, shipment, shipping, transportation, trucking, warehouse">
+    <meta name="description" content="Transportation &amp; Logistics Html Template" />
+    <meta name="author" content="https://www.cymolthemes.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Shiftler &#8211; Transportation &amp; Logistics Html Template</title>
+    
+
+
+
+
+</head>
+
+<body>
+    <!--page start-->
+    <div class="page">
+        <!--header start-->
+        <header id="masthead" class="header cmt-header-style-01">
+            <!-- cmt-topbar-wrapper -->
+            <div class="cmt-topbar cmt-textcolor-white clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 d-flex flex-row align-items-center justify-content-center">
+                            <div class="cmt-topbar-content">
+                                <ul class="top-contact text-left">
+                                    <li class="list-inline-item">The Reliable Moving Company. Your friend with a truck.</li>
+                                </ul>
+                            </div>
+                            <div class="top_bar_contact_item ml-auto">
+                                 <div class="top_bar_icon"><i class="fa fa-phone"></i>
+                                 </div> Make a call:<a href="#"> +1(123)456-7890</a>
+                            </div>
+                            <div class="top_bar_contact_item">
+                                 <div class="top_bar_icon"><i class="fa fa-map-marker"></i></div>4789 Melmorn Ton Mashintron Town
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div><!-- cmt-topbar end -->
+            <!-- site-header-menu -->
+            <div id="site-header-menu" class="site-header-menu">
+                <div class="site-header-menu-inner cmt-stickable-header ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <!--site-navigation -->
+                                <div class="site-navigation d-flex flex-row align-items-center">
+                                    <!-- site-branding -->
+                                    <div class="site-branding mr-auto">
+                                     
+                                            <a class="home-link" href="{% url "web:index" %}" title="Shiftler" rel="home">
+
+                                                 <img id="logo-img" class="img-center standardlogo" src="{% static "web/images/logo-img.png" %}" alt="logo-img">
+
+                                                 <img id="logo-dark" class="img-center stickylogo" src="{% static "web/images/logo-dark.png" %}" alt="logo-img">
+                                            </a>
+                                       
+                                    </div><!-- site-branding end -->
+                                    <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                        <span class="menubar-box">
+                                            <span class="menubar-inner"></span>
+                                        </span>
+                                    </div>
+                                    <!-- menu -->
+                                    <nav class="main-menu menu-mobile" id="menu">
+                                        <ul class="menu">
+                                            <li class="mega-menu-item "><a href="{% url "web:index" %}" class="mega-menu-link">Home</a></li>
+                                            <li><a href="{% url "web:about-us" %}">About Us</a></li>
+                                            </li>
+                                            <li><a href="{% url "web:services-1" %}">Services</a></li>
+                                                
+                                            </li>
+                                            <li class="mega-menu-item"><a href="{% url "web:portfolio-style" %}" class="mega-menu-link">Projects</a>
+                                            </li>
+                                            <li class="mega-menu-item"><a href="{% url "web:blog-grid-view" %}" class="mega-menu-link">Update</a>
+                                                
+                                            </li>
+                                            <li class="mega-menu-item {% if is_Contact %}active{% endif %}">
+                                                <a href="{% url "web:contact" %}" class="mega-menu-link">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                                                        
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- site-header-menu end-->
+        </header> 
+        <!-- page-title -->
+        <div class="cmt-page-title-row">
+            <div class="cmt-page-title-row-inner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h2 class="title">Contact Us</h2>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Go to Shiftler." href="{% url "web:index" %}" class="home">
+                                    <i class="themifyicon ti-home"></i> &nbsp;Home</a>
+                                </span>
+                                <span class="cmt-bread-sep">&nbsp;--&nbsp;</span>
+                                <span>Contact Us</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+        </div>
+        <!-- page-title end -->
+
+    <div class="main-site">
+        <section class="cmt-row cta-section cmt-bgimage-yes bg-img12 cmt-bg cmt-bgcolor-white clearfix">
+            <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
+            <div class="container"><!--container-->
+                <div class="row"><!--row-->
+                    <div class="col-lg-6 col-md-12 col-sm-12 pr-140 two">
+                        <!-- section title -->
+                        <div class="section-title">
+                            <div class="title-header">
+                                <h2 class="title text-left">Let's Discuss What's Next</h2>
+                            </div>
+                            <div class="title-desc mb-15">
+                                Drop us a line! We’ll set up a time to chat over the phone or in-person to know more about your business needs. All primary conferences are free of charge.
+                            </div>
+                        </div><!-- section title end -->
+                        <div class="pt-25">
+                            
+                            <div class="text-left">
+                                <h3 class="fs-24">Moscow (HO)</h3>
+                                <ul class="cmt-box-desc-text fs_16">
+                                    <li><strong>Address:</strong>Unit TAP.E,175 Long Lane, London, SE1 4GT</li>
+                                    <li><strong>Call Us On:</strong>+1800 200 133</li>
+                                    <li><strong>Mail Us:</strong> info@example.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-25">
+                            
+                            <div class="text-left">
+                                <h3 class="fs-24">London</h3>
+                                <ul class="cmt-box-desc-text fs_16">
+                                    <li><strong>Address:</strong>Unit TAP.E,175 Long Lane, London, SE1 4GT</li>
+                                    <li><strong>Call Us On:</strong>+1800 200 133</li>
+                                    <li><strong>Mail Us:</strong> info@example.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="cmt-bgcolor-white box-shadow cmt-contactform-style3 position-sticky spacing-11">
+                            <!--section-title-->
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h2 class="title">How Can We Help!</h2>
+                                </div>
+                            </div><!--section-title end-->
+                            <form id="contact_form" class="cmt-contactform-3 wrap-form clearfix" method="post" action="#">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="ti ti-user"></i>
+                                                    {{contact.fullname}}
+                                                </label>
+                                            </div>
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="ti ti-user"></i>
+                                                    {{contact.lastname}}
+                                                </label>
+                                            </div>
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="fa fa-paper-plane-o"></i>
+                                                    {{contact.email}}
+                                                </label>
+                                            </div>
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="ti ti-mobile"></i>
+                                                    {{contact.phone}}
+                                                </label>
+                                            </div>
+                                            <div class="col-12">
+                                                <label>
+                                                    <i class="fa fa-pencil-square-o"></i>
+                                                    <span class="text-input">
+                                                        {{contact.message}}
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <span class="checkbox-item w-100">
+                                                <input type="checkbox" name="default:[]" value="I accept the privacy and terms.">
+                                                <span class="list-item-label"> I accept the privacy and terms.</span>
+                                            </span> 
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <button class="submit cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-skincolor"  type="submit">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="cmt-row cmt-bgcolor-grey clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 res-767-mb-25">
+                        <div class="pr-35 res-767-mb-25 res-767-pr-0">
+                            <h3>Careers</h3>
+                            <div class="mt-15 mb-15">
+                                We are equipped with an updated technical knowledge to serve our customers properly. Our method of application maintains.
+                            </div>
+                            <a href="" class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark fs_16 font-weight-500">
+                                See open positions<i class="fa fa-arrow-right fs_15 mb-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12  res-767-mb-25">
+                        <div class="pr-35 res-767-mb-25 res-767-pr-0">
+                            <h3>Customers</h3>
+                            <div class="mt-15 mb-15">
+                                We are equipped with an updated technical knowledge to serve our customers properly. Our method of application maintains.
+                            </div>
+                            <a href="" class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark fs_16 font-weight-500"> See Customer Stories<i class="fa fa-arrow-right fs_15 mb-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 res-767-mb-25">
+                        <div class="pr-35 res-767-mb-25 res-767-pr-0">
+                            <h3>Appointment</h3>
+                            <div class="mt-15 mb-15">
+                                We are equipped with an updated technical knowledge to serve our customers properly. Our method of application maintains.
+                            </div>
+                            <a href="" class="cmt-btn btn-inline cmt-icon-btn-right cmt-btn-color-dark fs_16 font-weight-500"> Get In Touch<i class="fa fa-arrow-right fs_15 mb-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </div>
+    <!--footer start-->
+    
+    <!--footer End-->
+        <!--back-to-top start-->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    <!--back-to-top end-->
+    </div><!--Page End-->
+    <!-- Javascript -->
+    <script>
+        function sendWhatsAppMessage() {
+            var fullname = document.getElementById("id_fullname").value;
+            var lastname = document.getElementById("id_lastname").value;
+            var email = document.getElementById("id_email").value;
+            var phone = document.getElementById("id_phone").value;
+            var message = document.getElementById("id_message").value;
+    
+            var whatsappMessage = `Name: ${fullname}%0ALast: ${lastname}%0AEmail: ${email}%0APhone: ${phone} %0AMessage: ${message}`;
+    
+            // Replace 'YOUR_WHATSAPP_NUMBER' with the recipient's WhatsApp number
+            var recipientNumber = '+919562157043';
+            var url = `https://api.whatsapp.com/send?phone=${recipientNumber}&text=${whatsappMessage}`;
+    
+            // Open WhatsApp in a new tab to send the message
+            window.open(url, '_blank');
+    
+            // Display SweetAlert confirmation immediately
+            
+        }
+    
+        // Attach event listener to the form submission
+        var form = document.getElementById("contact_form");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            sendWhatsAppMessage(); // Send WhatsApp message
+    
+            // You can also submit the form data to the server here if needed
+            document.getElementById('contact_form').submit(); // Submit the form after SweetAlert
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>
+
+{% endblock %}
